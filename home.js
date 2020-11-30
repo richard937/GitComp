@@ -1,5 +1,5 @@
-const client_id = 'cef6eda2565c63eea9e0';
-const client_secret = '6cb36bb761a877ae7675c2f51ddc6ab38b6532cf';
+const client_id = '';
+const client_secret = '';
 
 
 let followers = [];
