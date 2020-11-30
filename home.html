@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="/home.js"></script>
+    <link rel="stylesheet" type="text/css" href="/home.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 style="text-align: center;">Welcome to GitComp</h1>
+        <h5 style="text-align: center;">It displays the users who are followed by the primary user, and are
+            following of the secondary user</h5>
+        <br><br>
+
+        <div id="success" class="alert alert-success" style="text-align: center; display: none;">
+            <strong>Success!</strong> User found and the data is saved.
+        </div>
+
+
+        <div id="danger" class="alert alert-danger" style="text-align: center; display: none;">
+            <strong>Failed!</strong> GitHub user not found.
+        </div>
+
+        <div class="user-field">
+            <input class="input-field" id="username" type="text" placeholder="primary user">
+            <button id="user1" class="btn" onclick="getData(this)">Check</button>
+        </div>
+
+        <br>
+
+        <div class="user-field">
+            <input class="input-field" id="username" type="text" placeholder="secondary user">
+            <button id="user2" class="btn" onclick="getData(this)">Check</button>
+        </div>
+
+        <br><br><br>
+
+        <div class="user-field">
+            <button class="btn" onclick="printCommonElements()">Show Common Users</button>
+        </div>
+
+
+        <br><br>
+
+        <div id="result" class="alert alert-info" style="text-align: center; display: none;">
+        </div>
+
+    </div>
+</body>
+
+
+</html>
